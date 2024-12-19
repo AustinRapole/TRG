@@ -1,0 +1,25 @@
+@article{NATHAN,
+        author = "author",
+        title = "title",
+        journal =  "Congressus Numerantium",
+        volume = "226",
+        year = "2016",
+        pages = "31-48"
+}
+
+@article{Paine,
+        author = "Thomas Paine",
+        title = "Common Sense",
+        journal =  "Congressus Numerantium",
+        volume = "226",
+        year = "1776",
+        pages = "31-48"
+}
+
+article{Temp-13,
+}
+
+@article{Nope,
+
+@article{Bethea-13,
+}

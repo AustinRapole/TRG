@@ -1,0 +1,35 @@
+."Process this file with
+."groff -m -Tascii test_script.1
+."
+
+.TH Testing 1
+
+.SH NAME
+TRGtesting
+
+.SH DESCRIPTION
+.B TRGtesting
+This file provides test cases for the Api an database functions and the UI.
+3 We used Silenium for the UI and pytest for everything else.
+.RS
+.RE
+.SH To Run
+There are various ways to run the test casees.
+.nf
+For frontend testing:
+-make ui
+
+For backend testing:
+-make test
+
+For testing both simultaneously:
+-make
+
+.SH SEE ALSO
+.BR TRGserver(1),
+.BR TRGadmin(1),
+.BR AdminManual.pdf(1)
+
+.SH CREDITS
+.PP 
+https://www.golinuxcloud.com

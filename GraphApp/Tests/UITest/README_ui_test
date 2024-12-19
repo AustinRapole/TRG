@@ -1,0 +1,15 @@
+Docker running/building stuff:
+https://www.qatouch.com/blog/how-to-run-selenium-webdriver-with-docker/
+Build:
+	docker build -t selenium-webdriver .
+Run:
+	docker run --network="host" --rm -v $(pwd):/app selenium-webdriver
+		- Use when running site from localhost
+
+https://github.com/mherrmann/helium/blob/master/docs/cheatsheet.md
+Started looking at a easier version of selenium for ui testing.
+This looks a lot simpler to selenium but still have issues with
+getting the browers working.
+
+- Josh
+

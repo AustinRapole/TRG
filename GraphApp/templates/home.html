@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Toadally Real Graphs</title>
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  	<link rel="stylesheet" href={{url_for('static', filename='style.css')}}>
+	<link rel="icon" type="image/x-icon" href={{url_for('static', filename='images/ToadMascot.svg')}}>
+  </head>
+  
+  <body>
+  
+  <!--Navigation Bar-->
+  	<div class="navigationBar">
+  		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  		<div class="container-fluid">
+    			<a class="navbar-brand" href="/"><img class="NavLogo" src={{url_for('static', filename='images/MainLogo.svg')}} alt="N/A"></a>
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      				<span class="navbar-toggler-icon"></span>
+    			</button>
+
+    			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        				<li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+        				<li class="nav-item"><a class="nav-link" href="/input">Enter Input</a></li>
+        				<li class="nav-item"><a class="nav-link" href="/bib">Bibliography</a></li>
+      				</ul>
+    			</div>
+  		</div>
+		</nav>
+	</div>
+    	
+<!--Content-->
+			<br>
+			<br>
+			<br>
+			<h4 class="center garamond"><b>Welcome to</b></h4>
+			<center><img class="blackLogo" src="{{url_for('static', filename='images/BlackLogo.svg')}}"/></center>
+			<br>
+			<br>
+			<br>
+			<center><p class="garamond features"><b>Toadally Real Graphs has useful features to help you...</b></p></center>
+			<center>
+			<div class="featuresDiv">
+				<h6 class="features garamond container space-around container pace-between">Check if Graphs are Realizable</h6>
+				<p class= "bullet"><img src="{{url_for('static',filename='images/lilypad_bullet.png')}}" alt="N/A">Input the paramenters of your graph</p>
+				<p class= "bullet"><img src="{{url_for('static',filename='images/lilypad_bullet.png')}}" alt="N/A">Check for realization against our database of theorems</p>
+				<h6 class="features garamond container space-around container pace-between">Generate Images of Graphs</h6>
+				<p class= "bullet"><img src="{{url_for('static',filename='images/lilypad_bullet.png')}}" alt="N/A">Download an example drawing of your graph to use in your own work</p>
+				<p class= "bullet"><img src="{{url_for('static',filename='images/lilypad_bullet.png')}}" alt="N/A">Download the adjacency matrix of your graph to draw your own graph</p>
+				<h6 class="features garamond container space-around container pace-between">Copy Bibliographies</h6>
+				<p class= "bullet"><img src="{{url_for('static',filename='images/lilypad_bullet.png')}}" alt="N/A">View the list of all references used to create our database</p>
+				<p class= "bullet"><img src="{{url_for('static',filename='images/lilypad_bullet.png')}}" alt="N/A">Copy the bibtex of a citation for easy integration into your own work</p>
+			</div>
+			</center>
+			<br>
+			<br>
+			<br>
+			<center><a class="btn btn-primary btn-lg mx-auto btn-center garamond" href="/input" role="button">Get Started!</a></center>
+			<br>
+	
+	<!-- image gif of frog spinning -->
+	
+	<div class="pondDiv">
+		<center><img class="pondPhoto" src="{{url_for('static', filename='images/pondPhoto300.svg')}}"/></center>
+		<img class="animated-gif overlay" src="{{url_for('static', filename='images/frog.gif')}}"/>
+	</div>
+		<!--<img class="pondPhoto" src="{{url_for('static', filename='images/pondPhoto.svg')}}"/>-->
+
+<!--Other Information-->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

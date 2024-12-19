@@ -1,0 +1,6 @@
+*filename.txt*	For vim_version	Last change: 2024 March 22
+*TDGhelp*
+
+Toadally Real Graphs Administrative Tool Help Guidance
+
+================================================================

@@ -1,0 +1,77 @@
+This document defines the expected commuication standards between the frontend and the various API endpoints.
+
+-----Endpoint 1 -> Sending four basic inputs to the server-----
+
+***Request***
+URL: /inputGraph
+
+Request Method: POST
+
+Data Type: JSON
+
+Input Fields: "vert_con" = int , "edge_con" = int, "min_deg" = int, "max_deg" = int
+
+***Response***
+
+Data Type: JSON
+
+Input Fields: "notReal" = bool, "failed_checks" = [formulas,bibkeys], "messages" = []
+
+Status indicator: "success" = bool
+
+Error Codes: If false, input field -> error
+ - Missing Input -> "Error - Missing input field" 
+ - Invalid Types -> "Error - Invalid input type"
+ - Unknown Database Error -> "Error - Unknown error occurred when checking inputs"
+
+-----Endpoint 2 -> Retrieving bibliography list from server------
+
+***Request***
+URL: /getBib
+
+Request Method: GET
+
+Data Type: JSON
+
+Input Fields: None
+
+***Response***
+Data Type: JSON
+
+Input Fields: "bibs" = [] -> Bibs contains a list of lists where the sub lists are in the following 
+			     order: bibKeys, author, title, year, bibtex. 
+
+Status indicator: success = bool
+
+Error Codes:
+ - Unknown Database Error -> "Error - Unknown error occurred when retrieving bibliographies"
+
+-----Endpoint 3 -> ------
+
+***Request***
+URL: /drawGraph
+
+Request Method: POST
+
+Data Type: JSON
+
+Input Fields: "vert_con" = int , "edge_con" = int, "min_deg" = int, "max_deg" = int, "n" = int
+
+***Response***
+
+Data Type: JSON
+
+if notReal:
+	Input Fields: "notReal" = bool
+else:
+        Input Fields: "notReal" = bool, "formulas" = [], "bibkeys" = [], "images" = list of base64 encoded bytes of .png files, "matrices" = list of base64 encoded bytes of .csv files
+
+Status indicator: "success" = bool
+
+Error Codes: If false, input field -> error
+ - Missing Input -> "Error - Missing input field" 
+ - Invalid Types -> "Error - Invalid input type"
+ - Unknown Database Error -> "Error - Unknown error occurred when checking inputs"
+ - Unknown Drawing Error -> "Error - Unknown error occurred when drawing graph"
+
+

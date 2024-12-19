@@ -1,0 +1,118 @@
+."Process this file with
+."groff -m -Tascii test_script.1
+."
+
+.TH TRGadmin 1
+
+.SH NAME
+TRGadmin - an interface to the admin tool manuals
+
+.SH SYNOPSIS
+.B TRGadmin
+.RB [| OPTIONS |]
+
+.SH DESCRIPTION
+.B TRGadmin
+The admin tool is designed to allow administrators to quickly and easily make changes to the website.
+The tool will automatically determine which table the data is intended for based on the syntax.
+
+Bibliography entries must be in a file exclusively for bibs; however, you can add to multiple tables 
+using a single file (again excluding the bibliography table) as long as the sytnax for that entry matc    hes the spefified tabe.
+
+For the bibliography entries must be added in teh file as bibtex citation where each element is sepera    ted by a new line.
+This table can not contain additional "{}" besides the opening and closing ones!
+There must also be exactly one blank line between each citation in the file.
+
+For the other three tables, each new entry must be on a single line. Again, that
+entry's syntax must match the specified table.
+
+When the removing rows, any combination of tables can be modified from a single file.
+Each row to be removed must be on a single line, and all tables use the same synatax.
+
+When updating cells, any combination of tables can be modified from a single file.
+Each cell change must be on a single line, and all tables use the same synatax.
+
+Add files syntax for each table: CHECK1$BIBKEY$FORMULA
+CHECK2$BIBKEY$FORMULA$FUNCTION
+SANITIZE$FORMULA
+
+(bibtex example)
+  @article{BIBKEY,
+    author= "author",
+    title= "title",
+    year="year"
+  } 
+
+2. Remove files syntax for each table: TABLE$BIBKEY
+
+3. Update files syntax for each table: TABLE$NEW_VALUE$COLUMN$BIBKEY
+4. For updating from table: SANTIZEN$NEW$COLUMN$OLD
+.RS
+.RE
+
+.SH OPTIONS
+.IP "-a, --add"
+Add information to the database. 
+
+.IP "-d, --delete"
+Delete a row from the specified table.
+
+.IP "-f, --file"
+Specify a file to import data from.
+
+.IP "-h, --help"
+Displays help menu.
+
+.IP "-p, --print"
+Print elements from the specified table.
+
+.IP "-t, --table"
+Select a specific table in the database
+
+.IP "-u, --update"
+Update a cell in the database.
+
+
+.SH FILES
+.TP
+.I
+/etc/test_script.conf
+.TP
+.I
+/usr/bin/test_script
+
+.SH EXAMPLES
+.TPG
+.BI TRGadmin -p -t [TABLE]
+.TP
+.PP
+To print table contents.
+.TP
+.BI TRGadmin -l
+.TP
+.PP
+To list all tables.
+.TP
+.BI TRGadmin -a -f [FIL]E
+.TP
+.PP
+To add rows to a table.
+.TP
+.BI TRGadmin -d -f [FILE]
+.TP
+.PP
+Delete a bibliography.
+.TP
+.BI TRGadmin -u -f [FILE]
+.TP
+.PP
+To update cells in tables.
+
+.SH SEE ALSO
+.BR TRGtesting(1),
+.BR TRGserver(1),
+.BR AdminManual.pdf(1)
+
+.SH CREDITS
+.PP
+https://www.golinuxcloud.com

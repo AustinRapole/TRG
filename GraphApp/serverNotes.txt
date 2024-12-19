@@ -1,0 +1,24 @@
+----- TRG server -----
+This server runs the TRG websites providing endpoints for the html pages and the api calls.
+
+----- To Run -----
+./TRGserver.py
+
+----- Notes -----
+For the formulas in our database, we defined our own syntax for adding condition statements.
+Formulas can only contain one conditional per formula, so boolean logic must used if more are needed.
+Eval() evaluates python syntax, so in most cases all other syntax in the formulas can be used as such. 
+However, We had to require certain python3 key words to be substituted to avoid conflicts with variable names.
+The statements before and after the colon must have a statement even if it is just True.
+
+Syntax: CONDITION? IF TRUE: IF FALSE
+
+Substitutions:
+not -> !
+and -> &
+if complete -> C
+if regular -> R
+vertex connectivity -> k
+for edge connectivity -> l
+minimum degree -> d
+maximum degree -> D

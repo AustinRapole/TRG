@@ -1,0 +1,11 @@
+----- Testing -----
+This file provides test cases for the Api an database functions and the UI.
+We used Silenium for the UI and pytest for everything else.
+
+----- To Run -----
+These are various ways to run the test cases.
+
+- make  
+- make test
+
+

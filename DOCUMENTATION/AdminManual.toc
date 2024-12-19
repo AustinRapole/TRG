@@ -1,0 +1,9 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {A}Introduction}{2}{appendix.A}%
+\contentsline {section}{\numberline {B}Man Pages}{2}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Accessing Man pages}{2}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}TRGadmin}{2}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}TRGserver}{3}{subsection.B.3}%
+\contentsline {subsection}{\numberline {B.4}TRGtesting}{3}{subsection.B.4}%
+\contentsline {subsection}{\numberline {B.5}Dependencies}{3}{subsection.B.5}%
+\contentsline {subsection}{\numberline {B.6}References}{4}{subsection.B.6}%

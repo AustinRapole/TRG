@@ -1,0 +1,229 @@
+/*Background color*/
+html {
+	height: 100%;
+}
+
+body {
+  	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background: linear-gradient(180deg, #B5DB9F, #DFF0D6);
+}
+
+
+.bibBackground {
+  	background: #B5DB9F;
+}
+
+.highlight {
+	background: #78b6c5 !important; 
+}
+
+.navigationBar {
+	height: 50px;
+}
+
+.navbar {
+  	padding: 0px 0px;
+	background-color: #6D9657 !important;
+}
+
+.navbar a {
+	color: #f2f2f2;
+	font-size: 18px;
+}
+.nav-link {
+	padding: 20px;
+}
+
+.active {
+	color: white !important;
+	background-color: #7CBE55 !important; #Green
+}
+
+.nav-item a:hover {
+	color: black !important;  
+	background-color: #EEF7E9 !important; #off-white
+}
+
+.NavLogo {	
+	float: left;
+	padding 0px 0px;
+	width: 280px;	
+}
+
+.btn {
+	border-color: #1f3414 !important;
+	color: #1f3414 !important;
+}
+
+
+.btn:hover {
+	background-color: #7CBE55 !important; #Green
+}
+
+/* Input Boxes */
+.submitButton {
+	text-align: center !important;
+}
+
+.btn-primary {
+	background-color: #7CBE55 !important;
+}
+
+.btn-primary:hover {
+	background-color: #EEF7E9 !important;
+}
+
+.bib-button {
+  	float: right;
+	width: 80% !important;
+	flex-wrap: wrap !important;
+}
+
+
+.example { /*was .flex-container*/
+	background-color: #FFFFFF !important;
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
+}
+
+.flex-bg {
+  	background-color: #82ba89;
+}
+
+.flex-output {
+	margin: 20px;
+	width: 50%;
+	border-radius: 25px;
+  	background-color: #82ba89;
+}
+
+.flex-box {
+	margin: 20px;
+	width: 50%;
+}
+
+.proof, .bibs {
+	color: #4d4b4b;
+}
+
+.card-text {
+  	float: left;
+	display: inline-block;
+  	padding-right: 13px;
+}
+
+.card-title {
+  	font-size: 15pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.home-page {
+  	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	width: 500px;
+	height: 100px;
+}
+
+.animated-gif {
+	/*display:block;*/
+  /*	position: absolute;
+	width: 300px;
+	align-items: center;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items:center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 300px;*/
+	/*position: absolute;
+	top: 50%;
+	left: 50%; */
+	/*padding-top: 10px;*/
+	width: 300px;
+	height: 300px;
+	
+}
+
+.featuresDiv {
+	max-width: 1034px; 
+	justify-content: center;
+}
+
+.center {
+/**	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;**/
+  	text-align: center;
+  	line-height: 100px
+}
+.containers{
+    	/*display: flex;
+    	flex-direction: row;
+    	align-items: flex-start
+	justify-content: center;
+	flex-wrap: wrap;
+  	text-align: center;
+	flex-direction: row;*/
+	padding:10px;
+	white-space: nowrap;
+	display: inline
+/*	background-color: #f0f6ec !important; #Green*/
+ }
+.container {
+  	display: flex;
+}
+.container.space-around {
+  	justify-content: space-around;
+  	background-color: #f0f6ec
+}
+/*.container.space-between {
+  justify-content: space-between;
+  background-color: #f0f6ec
+}*/
+.justified-textv {
+  	text-align: justify;
+}
+
+.pondDiv {
+	position: relative;
+}
+
+.pondPhoto {
+	width: 100%;	
+	height: 20%;
+}
+
+.overlay {
+	position: absolute;
+	top: 50%;	
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+.garamond {
+	font-family: Garamond, serif;
+}
+
+.features {
+	font-size: 17pt;
+}
+.bullet {
+	list-style-image: url("images/lilypad_bullet.png");
+	position: relative;
+	text-align: left;
+	font-size: 14pt;
+}

@@ -1,0 +1,86 @@
+----- end_points.py -----
+$ check_inputs():
+  $ Test to make sure it fails correctly if missing vert_con and max_deg
+  $ Test to make sure it fails correctly if any fields are non-ints
+  $ Test to make sure it fails correctly if an exception is thrown in checkInputs()
+  $ Test to make sure if successful the data from checkInputs is sent off correctly
+  $ If possible, also a test case to ensure an incorrect HTTP method is refused
+
+$ get_bib():
+  $ Test to see if it handles correctly when get_bib_DB() throws an exception
+  $ Test to see if it successfully sends data from get_bib_DB()
+  $ Again if we can make ssure it refuses wrong methods types 
+
+$ draw_graph():
+  $ Test to see if it fails correctly if vert_con or n is missing
+  $ Test to see if it fails correctly if any field is a non-integer value
+  $ Test to see if it handles correctly when check_n throws an exception
+  $ Test to see it returns proper values when notReal is False
+  $ Test to see it returns proper values when notReal is True
+  $ Test to see if it fails correctly if construct_graphs() throws an exception
+
+----- access_db.py -----
+$ checkInputs():
+  $ Test to see if various formulas evaluate to notReal = True correctly
+  $ Test to see if various formuals evaluate to notReal = False correctly
+  $ If notReal = True, make sure the all failed formuals corresponding bibkeys are all paired correctly and returned.
+  $ If notReal = False, ensure that bibkeys and failed formuals are empty
+
+$ check_n():  
+  $ Test to see if bad n value gets sanitized correctly 
+  $ Test to see if various formulas evaluate to notReal = True correctly
+  $ Test to see if various formuals evaluate to notReal = False correctly
+  $ If notReal = False, make sure the all passed formulas and corresponding bibkeys annd builders function are all paired correctly and returned.
+  $ If notReal = True, ensure that bibkeys, passed formulas, and  builders are returned empty
+
+$ get_bib_DB():
+  - This one tests the database itself. Just all rows of each column get put into the correct lists
+
+----- helpers.py  -----
+$ gen_path()
+  $ none
+
+$ handle_png()
+  $ Test to see that a non existent file returns non
+  $ Test to see that it successfully removes file and returns the image_bytes(mock the base64encode) 
+
+$ construct_graphs()
+  $ Test if b is None the entries are added as None
+  $ Test if b is a function see that bytes are return
+  $ Test if b is not a valid function it gets added as None
+
+$ getCheck1Entries()
+  - Test to make sure all rows for each column get added 
+
+$+ getCheck2Entries()
+  - Test to make sure all rows for each column get added 
+
+$ completeGraph()
+  $ none
+
+$ regularGraph()
+  $ none
+ 
+$ getSanitizers()
+  - Test to make sure all rows for each column get added 
+
++ replaceVars()
+  - Just do a test that tries formulas that cover all of the diffferent replacements you could have
+
++ sanitize_n():
+  - Test to see that all passes return True
+  - Test to see if one of several fails it returns False
+
++ evaluateMult()
+
+  - Test that non-conditional formulas eval correctly
+  - Test that correct eval formulas eval correctly
+  - Test that formulas that contain a '?' also have a ':'
+  - Test that formulas that are missing arguments in the conditional.
+  - Test formulas that have multiple '?' and/or ':'
+  - Test if eval has bad input, that it returns False
+
+
+
+
+

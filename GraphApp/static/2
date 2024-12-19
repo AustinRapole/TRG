@@ -1,0 +1,140 @@
+/*Background color*/
+html {
+	height: 100%;
+}
+
+body {
+  	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background: linear-gradient(180deg, #B5DB9F, #DFF0D6);
+}
+
+.bibBackground {
+  	background: #B5DB9F;
+}
+
+.navigationBar {
+	height: 50px;
+}
+
+.navbar {
+  	padding: 0px 0px;
+	background-color: #6D9657 !important;
+}
+
+.navbar a {
+	color: #f2f2f2;
+	font-size: 18px;
+}
+.nav-link {
+	padding: 20px;
+}
+
+.active {
+	color: white !important;
+	background-color: #7CBE55 !important; #Green
+}
+
+.nav-item a:hover {
+	color: black !important;  
+	background-color: #EEF7E9 !important; #off-white
+}
+
+.NavLogo {	
+	float: left;
+	padding 0px 0px;
+	width: 280px;	
+}
+
+.bib-button {
+  	text-align: center; !important
+}
+
+.btn {
+	border-color: #1f3414 !important;
+	color: #1f3414 !important;
+}
+
+
+.btn:hover {
+	background-color: #7CBE55 !important; #Green
+}
+
+/* Input Boxes */
+.submitButton {
+	text-align: center !important;
+}
+
+.btn-primary {
+	background-color: #7CBE55 !important;
+}
+
+.btn-primary:hover {
+	background-color: #EEF7E9 !important;
+}
+
+.example { /*was .flex-container*/
+	background-color: #FFFFFF !important;
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flex-bg {
+  	background-color: #82ba89;
+}
+
+.flex-box {
+	margin: 20px;
+	width: 50%;
+}
+
+/*
+.card {
+  	width: auto;
+	height: 1in;
+}
+*/
+.card-text {
+	color: #FFFFFF;
+}
+
+.card-title {
+  	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.home-page {
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	width: 500px;
+	height: 100px;
+}
+
+.animated-gif {
+/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -110%);
+	padding: 10px;
+	width: 300px;
+	height: 300px;*/
+display:block;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -110%);*/
+	left: 50%;
+/*	padding: 10px;*/
+	width: 300px;
+	height: 300px;
+}
